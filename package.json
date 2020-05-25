@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A single page script generator.",
   "main": "index.js",
+  "bin": "node ./cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/rv-npm/generate-script-template/issues"
   },
-  "homepage": "https://github.com/rv-npm/generate-script-template#readme"
+  "homepage": "https://github.com/rv-npm/generate-script-template#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
 }
