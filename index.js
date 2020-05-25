@@ -35,7 +35,7 @@ const getScriptContent = async (startsWith, endsWith="") => {
 };
 
 const writeContentToFile = (content, fileName) => {
-    const filePath = path.join(require('os').homedir(), fileName);
+    const filePath = path.join(process.cwd(), fileName);
     fs.writeFileSync(filePath, content);
     console.log(filePath);
 };
