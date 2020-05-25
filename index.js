@@ -35,9 +35,9 @@ const getScriptContent = async (startsWith, endsWith="") => {
 };
 
 const writeContentToFile = (content, fileName) => {
-    const path = path.join(require('os').homedir(), fileName);
-    fs.writeFileSync(path, content);
-    console.log(path);
+    const filePath = path.join(require('os').homedir(), fileName);
+    fs.writeFileSync(filePath, content);
+    console.log(filePath);
 };
 
 module.exports = { getAllTemplateNames, getScriptContent, writeContentToFile };
