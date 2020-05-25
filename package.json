@@ -1,9 +1,9 @@
 {
   "name": "gen-tem",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A single page script generator.",
   "main": "index.js",
-  "bin": "node cli.js",
+  "bin": "./cli.js",
   "scripts": {
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
