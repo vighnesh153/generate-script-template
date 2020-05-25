@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-npm install -g gst
+npm install -g gen-tem
 ```
 
 > If you don't want to pollute your global package
@@ -14,30 +14,30 @@ npm install -g gst
 ##  Usage
 ### See available templates
 ```
-gst --available
+gen-tem --available
 ```
 or
 ```
-gst -a
+gen-tem -a
 ```
 
 ### Create a file from template
 ```
-gst <template-name> <my-file.extension>
+gen-tem <template-name> <my-file.extension>
 ```
 
 ### Shortcut create a file from template
 Use characters until only one template matches.
 ```
-gst <starting-chars-of-template-name> <my-file.extension>
-gst <starting-chars-of-template-name> <ending-chars> <my-file.extension>
+gen-tem <starting-chars-of-template-name> <my-file.extension>
+gen-tem <starting-chars-of-template-name> <ending-chars> <my-file.extension>
 ```
 
 ## Examples
 Suppose `python_cp` is a name of a template.
 ```
-gst python_cp myFile.py
-gst py myFile.py
-gst py cp myFile.py
-gst py n_cp myFile.py
+gen-tem python_cp myFile.py
+gen-tem py myFile.py
+gen-tem py cp myFile.py
+gen-tem py n_cp myFile.py
 ```
