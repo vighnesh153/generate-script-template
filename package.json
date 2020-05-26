@@ -1,6 +1,6 @@
 {
   "name": "gen-tem",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A single page script generator.",
   "main": "index.js",
   "bin": "./cli.js",

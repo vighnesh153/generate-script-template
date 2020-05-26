@@ -1,5 +1,9 @@
 # Generate Script Template
 
+<p>
+<img alt="npm" src="https://img.shields.io/npm/dt/gen-tem">
+</p>
+
 ## Installation
 ```
 npm install -g gen-tem
@@ -41,3 +45,10 @@ gen-tem py myFile.py
 gen-tem py cp myFile.py
 gen-tem py n_cp myFile.py
 ```
+
+## Want more templates?
+
+I have only added template/s that I use often. If you want 
+more templates, feel free to add them to 
+[this](https://github.com/vighnesh153/single-page-templates) 
+repository and they will be picked up by the `gen-tem` command.
